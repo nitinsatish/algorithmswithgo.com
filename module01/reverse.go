@@ -6,6 +6,20 @@ package module01
 //   Reverse("cat") => "tac"
 //   Reverse("alphabet") => "tebahpla"
 //
+//First solution
+// func Reverse(word string) string {
+// 	rev := ""
+// 	for i := range word {
+// 		rev = rev + string(word[len(word)-1-i])
+// 	}
+// 	return rev
+// }
+
+//Reverse function for string
 func Reverse(word string) string {
-	return ""
+	rev := ""
+	for _, i := range word {
+		rev = string(i) + rev
+	}
+	return rev
 }
